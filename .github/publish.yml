@@ -1,0 +1,37 @@
+name: Publish artifacts
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create-release:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Determine version
+        id: version
+        run: echo version=$(./gradlew -q -Prelease :printVersion) >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.version.outputs.version }}
+          name: Release ${{ steps.version.outputs.version }}
+  publish-artifacts:
+    runs-on: ubuntu-22.04
+    needs: [ create-release ]
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Publish java artifacts
+        uses: hypertrace/github-actions/gradle@main
+        with:
+          args: publish
