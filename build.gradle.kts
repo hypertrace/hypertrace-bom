@@ -5,7 +5,7 @@ plugins {
   id("org.hypertrace.repository-plugin") version "0.4.2"
   id("org.hypertrace.ci-utils-plugin") version "0.3.2"
   id("org.hypertrace.publish-plugin") version "1.0.5" apply false
-  id("org.hypertrace.code-style-plugin") version "1.1.2" apply false
+  id("org.hypertrace.code-style-plugin") version "1.2.0" apply false
   id("org.owasp.dependencycheck") version "8.4.0"
 }
 
@@ -15,7 +15,7 @@ subprojects {
 
   pluginManager.withPlugin("org.hypertrace.publish-plugin") {
     configure<HypertracePublishExtension> {
-      license.set(License.APACHE_2_0)
+      license.set(License.TRACEABLE_COMMUNITY)
     }
   }
 }

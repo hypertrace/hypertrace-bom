@@ -15,3 +15,4 @@ plugins {
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 include(":hypertrace-bom")
+include(":test-consumer")
