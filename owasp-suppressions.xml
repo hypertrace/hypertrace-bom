@@ -16,4 +16,11 @@
     <packageUrl regex="true">^pkg:maven/com\.fasterxml\.jackson\.core/jackson\-databind@.*$</packageUrl>
     <cve>CVE-2023-35116</cve>
   </suppress>
-</suppressions> 
+  <suppress>
+    <notes><![CDATA[
+   Minor vuln in server does not impact postgres driver
+   ]]></notes>
+    <packageUrl regex="true">^pkg:maven/org\.postgresql/postgresql@.*$</packageUrl>
+    <cve>CVE-2020-21469</cve>
+  </suppress>
+</suppressions>

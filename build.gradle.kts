@@ -2,18 +2,19 @@ import org.hypertrace.gradle.publishing.HypertracePublishExtension
 import org.hypertrace.gradle.publishing.License
 
 plugins {
-  id("org.hypertrace.repository-plugin") version "0.4.2"
-  id("org.hypertrace.ci-utils-plugin") version "0.3.2"
-  id("org.hypertrace.publish-plugin") version "1.0.5" apply false
-  id("org.hypertrace.code-style-plugin") version "1.2.0" apply false
-  id("org.owasp.dependencycheck") version "8.4.0"
+  alias(libs.plugins.hypertrace.repository)
+  alias(libs.plugins.hypertrace.ciutils)
+  alias(libs.plugins.hypertrace.publish) apply false
+  alias(libs.plugins.hypertrace.codestyle) apply false
+  alias(libs.plugins.owasp.dependencycheck)
 }
 
 subprojects {
   group = "org.hypertrace.bom"
-  apply(plugin = "org.hypertrace.code-style-plugin")
 
-  pluginManager.withPlugin("org.hypertrace.publish-plugin") {
+  apply(plugin = rootProject.libs.plugins.hypertrace.codestyle.get().pluginId)
+
+  pluginManager.withPlugin(rootProject.libs.plugins.hypertrace.publish.get().pluginId) {
     configure<HypertracePublishExtension> {
       license.set(License.TRACEABLE_COMMUNITY)
     }

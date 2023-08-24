@@ -1,6 +1,6 @@
 plugins {
   `java-platform`
-  id("org.hypertrace.publish-plugin")
+  alias(libs.plugins.hypertrace.publish)
 }
 
 javaPlatform {
