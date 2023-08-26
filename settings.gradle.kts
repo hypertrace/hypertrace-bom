@@ -15,4 +15,5 @@ plugins {
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 include(":hypertrace-bom")
+include(":hypertrace-version-catalog")
 include(":test-consumer")
