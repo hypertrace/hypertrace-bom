@@ -1,7 +1,7 @@
 name: Build and Validate
 on:
   schedule:
-    - cron: 16 10 * * 3
+    - cron: 16 10 * * *
   push:
     branches:
       - main

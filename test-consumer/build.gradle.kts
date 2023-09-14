@@ -22,4 +22,13 @@ dependencies {
   api(libs.protobuf.javautil)
   api(libs.jackson.databind)
   api(libs.grpc.core)
+  api(libs.grpc.stub)
+  api(libs.grpc.protobuf)
+  api(libs.grpc.api)
+  api(libs.grpc.netty)
+  api(libs.slf4j2.api)
+  api(libs.log4j.slf4j2.impl)
+  api(libs.javax.annotation)
+  api(libs.rxjava3)
+  api(libs.uuidcreator)
 }
