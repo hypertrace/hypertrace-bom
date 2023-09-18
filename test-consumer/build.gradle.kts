@@ -12,6 +12,7 @@ dependencies {
   api(libs.hypertrace.framework.spi)
   api(libs.hypertrace.kafka.framework)
   api(libs.hypertrace.integrationtest.framework)
+  api(libs.hypertrace.framework.documentstore.metrics)
   api(libs.hypertrace.documentstore)
   api(libs.hypertrace.eventstore)
 
