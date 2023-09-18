@@ -20,6 +20,7 @@ dependencies {
     api(libs.hypertrace.framework.spi)
     api(libs.hypertrace.integrationtest.framework)
     api(libs.hypertrace.documentstore)
+    api(libs.hypertrace.framework.documentstore.metrics)
     api(libs.hypertrace.eventstore)
 
     api(libs.guava)
