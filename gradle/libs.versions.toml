@@ -11,6 +11,9 @@ mockito = "5.5.0"
 
 [libraries]
 guava = { module = "com.google.guava:guava", version = "32.1.2-jre" }
+rholder-guava-retrying = { module = "com.github.rholder:guava-retrying", version = "2.0.0" }
+guice = { module = "com.google.inject:guice", version = "6.0.0" }
+google-re2j = { module = "com.google.re2j:re2j", version = "1.7" }
 typesafe-config = { module = "com.typesafe:config", version = "1.4.2" }
 lombok = { module = "org.projectlombok:lombok", version = "1.18.28" }
 grpc-bom = { module = "io.grpc:grpc-bom", version.ref = "grpc" }
@@ -29,9 +32,12 @@ javax-annotation = { module = "javax.annotation:javax.annotation-api", version =
 rxjava3 = { module = "io.reactivex.rxjava3:rxjava", version = "3.1.7" }
 uuidcreator = { module = "com.github.f4b6a3:uuid-creator", version = "5.3.2" }
 
+kafka-clients = { module = "org.apache.kafka:kafka-clients" }
+
 hypertrace-grpcutils-context = { module = "org.hypertrace.core.grpcutils:grpc-context-utils", version.ref = "hypertrace-grpcutils" }
 hypertrace-grpcutils-client = { module = "org.hypertrace.core.grpcutils:grpc-client-utils", version.ref = "hypertrace-grpcutils" }
 hypertrace-grpcutils-rx-client = { module = "org.hypertrace.core.grpcutils:grpc-client-rx-utils", version.ref = "hypertrace-grpcutils" }
+hypertrace-grpcutils-rx-server = { module = "org.hypertrace.core.grpcutils:grpc-server-rx-utils", version.ref = "hypertrace-grpcutils" }
 hypertrace-framework-grpc = { module = "org.hypertrace.core.serviceframework:platform-grpc-service-framework", version.ref = "hypertrace-framework" }
 hypertrace-framework-http = { module = "org.hypertrace.core.serviceframework:platform-http-service-framework", version.ref = "hypertrace-framework" }
 hypertrace-framework-spi = { module = "org.hypertrace.core.serviceframework:service-framework-spi", version.ref = "hypertrace-framework" }
@@ -58,3 +64,6 @@ hypertrace-docker-publish = { id = "org.hypertrace.docker-publish-plugin", versi
 hypertrace-docker-application = { id = "org.hypertrace.docker-java-application-plugin", version = "0.9.9" }
 owasp-dependencycheck = { id = "org.owasp.dependencycheck", version = "8.4.0" }
 google-protobuf = { id = "com.google.protobuf", version = "0.9.4" }
+
+[bundles]
+grpc-api = ["grpc-stub", "grpc-protobuf", "javax-annotation", "protobuf-java"]
