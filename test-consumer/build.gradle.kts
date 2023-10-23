@@ -7,6 +7,7 @@ dependencies {
   api(libs.hypertrace.grpcutils.context)
   api(libs.hypertrace.grpcutils.client)
   api(libs.hypertrace.grpcutils.rx.client)
+  api(libs.hypertrace.grpcutils.rx.server)
   api(libs.hypertrace.framework.grpc)
   api(libs.hypertrace.framework.http)
   api(libs.hypertrace.framework.spi)
@@ -17,6 +18,9 @@ dependencies {
   api(libs.hypertrace.eventstore)
 
   api(libs.guava)
+  api(libs.rholder.guava.retrying)
+  api(libs.google.re2j)
+  api(libs.guice)
   api(libs.typesafe.config)
   api(libs.lombok)
   api(libs.protobuf.java)
@@ -32,4 +36,5 @@ dependencies {
   api(libs.javax.annotation)
   api(libs.rxjava3)
   api(libs.uuidcreator)
+  api(libs.kafka.clients)
 }
