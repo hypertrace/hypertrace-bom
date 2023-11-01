@@ -5,6 +5,8 @@ hypertrace-framework = "0.1.62"
 hypertrace-grpcutils = "0.12.6"
 hypertrace-kafka = "0.3.9"
 hypertrace-bom = "+"
+hypertrace-attributeservice = "0.14.35"
+hypertrace-gatewayservice = "0.3.9"
 
 junit = "5.10.0"
 mockito = "5.5.0"
@@ -22,8 +24,11 @@ grpc-stub = { module = "io.grpc:grpc-stub" }
 grpc-protobuf = { module = "io.grpc:grpc-protobuf" }
 grpc-api = { module = "io.grpc:grpc-api" }
 grpc-netty = { module = "io.grpc:grpc-netty" }
+grpc-context = { module = "io.grpc:grpc-context" }
 jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version = "2.15.2" }
 jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind" }
+jackson-datatype-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" }
+jackson-datatype-jdk8 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jdk8" }
 protobuf-java = { module = "com.google.protobuf:protobuf-java", version.ref = "protoc" }
 protobuf-javautil = { module = "com.google.protobuf:protobuf-java-util", version.ref = "protoc" }
 slf4j2-api = { module = "org.slf4j:slf4j-api", version = "2.0.7" }
@@ -31,6 +36,9 @@ log4j-slf4j2-impl = { module = "org.apache.logging.log4j:log4j-slf4j2-impl", ver
 javax-annotation = { module = "javax.annotation:javax.annotation-api", version = "1.3.2" }
 rxjava3 = { module = "io.reactivex.rxjava3:rxjava", version = "3.1.7" }
 uuidcreator = { module = "com.github.f4b6a3:uuid-creator", version = "5.3.2" }
+commons-text = { module = "org.apache.commons:commons-text", version = "1.10.0" }
+graphql-java = { module = "com.graphql-java:graphql-java", version = "19.6" }
+jsr305 = { module = "com.google.code.findbugs:jsr305", version = "3.0.2" }
 
 kafka-clients = { module = "org.apache.kafka:kafka-clients" }
 
@@ -47,6 +55,9 @@ hypertrace-documentstore = { module = "org.hypertrace.core.documentstore:documen
 hypertrace-eventstore = { module = "org.hypertrace.core.eventstore:event-store", version = "0.1.3" }
 hypertrace-kafka-bom = { module = "org.hypertrace.core.kafkastreams.framework:kafka-bom", version.ref = "hypertrace-kafka" }
 hypertrace-kafka-framework = { module = "org.hypertrace.core.kafkastreams.framework:kafka-streams-framework", version.ref = "hypertrace-kafka" }
+hypertrace-attributeservice-api = { module = "org.hypertrace.core.attribute.service:attribute-service-api", version.ref = "hypertrace-attributeservice" }
+hypertrace-attributeservice-cachingclient = { module = "org.hypertrace.core.attribute.service:caching-attribute-service-client", version.ref = "hypertrace-attributeservice" }
+hypertrace-gatewayservice-api = { module = "org.hypertrace.gateway.service:gateway-service-api", version.ref = "hypertrace-gatewayservice" }
 hypertrace-bom = { module = "org.hypertrace.bom:hypertrace-bom", version.ref = "hypertrace-bom" }
 
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }

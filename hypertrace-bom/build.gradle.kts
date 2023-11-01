@@ -23,6 +23,9 @@ dependencies {
     api(libs.hypertrace.documentstore)
     api(libs.hypertrace.framework.documentstore.metrics)
     api(libs.hypertrace.eventstore)
+    api(libs.hypertrace.attributeservice.api)
+    api(libs.hypertrace.attributeservice.cachingclient)
+    api(libs.hypertrace.gatewayservice.api)
 
     api(libs.guava)
     api(libs.google.re2j)
@@ -37,5 +40,8 @@ dependencies {
     api(libs.kafka.clients)
     api(libs.slf4j2.api)
     api(libs.log4j.slf4j2.impl)
+    api(libs.commons.text)
+    api(libs.graphql.java)
+    api(libs.jsr305)
   }
 }
