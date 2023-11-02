@@ -7,6 +7,8 @@ hypertrace-kafka = "0.3.9"
 hypertrace-bom = "+"
 hypertrace-attributeservice = "0.14.35"
 hypertrace-gatewayservice = "0.3.9"
+hypertrace-entityservice = "0.8.86"
+hypertrace-configservice = "0.1.56"
 
 junit = "5.10.0"
 mockito = "5.5.0"
@@ -51,13 +53,18 @@ hypertrace-framework-http = { module = "org.hypertrace.core.serviceframework:pla
 hypertrace-framework-spi = { module = "org.hypertrace.core.serviceframework:service-framework-spi", version.ref = "hypertrace-framework" }
 hypertrace-integrationtest-framework = { module = "org.hypertrace.core.serviceframework:integrationtest-service-framework", version.ref = "hypertrace-framework" }
 hypertrace-framework-documentstore-metrics = { module = "org.hypertrace.core.serviceframework:docstore-metrics", version.ref = "hypertrace-framework" }
-hypertrace-documentstore = { module = "org.hypertrace.core.documentstore:document-store", version = "0.7.44" }
+hypertrace-documentstore = { module = "org.hypertrace.core.documentstore:document-store", version = "0.7.49" }
 hypertrace-eventstore = { module = "org.hypertrace.core.eventstore:event-store", version = "0.1.3" }
 hypertrace-kafka-bom = { module = "org.hypertrace.core.kafkastreams.framework:kafka-bom", version.ref = "hypertrace-kafka" }
 hypertrace-kafka-framework = { module = "org.hypertrace.core.kafkastreams.framework:kafka-streams-framework", version.ref = "hypertrace-kafka" }
 hypertrace-attributeservice-api = { module = "org.hypertrace.core.attribute.service:attribute-service-api", version.ref = "hypertrace-attributeservice" }
 hypertrace-attributeservice-cachingclient = { module = "org.hypertrace.core.attribute.service:caching-attribute-service-client", version.ref = "hypertrace-attributeservice" }
 hypertrace-gatewayservice-api = { module = "org.hypertrace.gateway.service:gateway-service-api", version.ref = "hypertrace-gatewayservice" }
+hypertrace-entityservice-types-rxclient = { module = "org.hypertrace.entity.service:entity-type-service-rx-client", version.ref = "hypertrace-entityservice" }
+hypertrace-configservice-spaces-api = { module = "org.hypertrace.config.service:spaces-config-service-api", version.ref = "hypertrace-configservice" }
+hypertrace-configservice-labels-api = { module = "org.hypertrace.config.service:labels-config-service-api", version.ref = "hypertrace-configservice" }
+hypertrace-configservice-labelapplication-api = { module = "org.hypertrace.config.service:label-application-rule-config-service-api", version.ref = "hypertrace-configservice" }
+hypertrace-configservice-spanprocessing-api = { module = "org.hypertrace.config.service:span-processing-config-service-api", version.ref = "hypertrace-configservice" }
 hypertrace-bom = { module = "org.hypertrace.bom:hypertrace-bom", version.ref = "hypertrace-bom" }
 
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
@@ -78,3 +85,4 @@ google-protobuf = { id = "com.google.protobuf", version = "0.9.4" }
 
 [bundles]
 grpc-api = ["grpc-stub", "grpc-protobuf", "javax-annotation", "protobuf-java"]
+

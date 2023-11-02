@@ -26,6 +26,11 @@ dependencies {
     api(libs.hypertrace.attributeservice.api)
     api(libs.hypertrace.attributeservice.cachingclient)
     api(libs.hypertrace.gatewayservice.api)
+    api(libs.hypertrace.entityservice.types.rxclient)
+    api(libs.hypertrace.configservice.spaces.api)
+    api(libs.hypertrace.configservice.labels.api)
+    api(libs.hypertrace.configservice.labelapplication.api)
+    api(libs.hypertrace.configservice.spanprocessing.api)
 
     api(libs.guava)
     api(libs.google.re2j)
