@@ -19,6 +19,7 @@ dependencies {
     api(libs.hypertrace.framework.grpc)
     api(libs.hypertrace.framework.http)
     api(libs.hypertrace.framework.spi)
+    api(libs.hypertrace.framework.metrics)
     api(libs.hypertrace.integrationtest.framework)
     api(libs.hypertrace.documentstore)
     api(libs.hypertrace.framework.documentstore.metrics)
