@@ -10,7 +10,7 @@
     <cpe>cpe:/a:service_project:service</cpe>
     <cpe>cpe:/a:processing:processing</cpe>
   </suppress>
-  <suppress until="2023-11-30Z">
+  <suppress until="2023-12-31Z">
     <notes><![CDATA[
    Doesn't appear to be a real vulnerability, jackson maintainers discuss at https://github.com/FasterXML/jackson-databind/issues/3973
    Revisit when suppression expires
@@ -19,14 +19,7 @@
     </packageUrl>
     <cve>CVE-2023-35116</cve>
   </suppress>
-  <suppress>
-    <notes><![CDATA[
-   Minor vuln in server does not impact postgres driver
-   ]]></notes>
-    <packageUrl regex="true">^pkg:maven/org\.postgresql/postgresql@.*$</packageUrl>
-    <cve>CVE-2020-21469</cve>
-  </suppress>
-  <suppress until="2023-11-30Z">
+  <suppress until="2023-12-31Z">
     <notes><![CDATA[
   This vulnerability is disputed, with the argument that SSL configuration is the responsibility of the client rather
   than the transport. The change in default is under consideration for the next major Netty release, revisit then.
@@ -38,7 +31,7 @@
     <packageUrl regex="true">^pkg:maven/io\.netty/netty.*@.*$</packageUrl>
     <vulnerabilityName>CVE-2023-4586</vulnerabilityName>
   </suppress>
-  <suppress until="2023-11-30Z">
+  <suppress until="2023-12-31Z">
     <notes><![CDATA[
    This CVE is declared fixed from 9.4.52, but the vuln db is not reflecting that. Suppress that specific version until
    db is updated.
