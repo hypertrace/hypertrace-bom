@@ -42,6 +42,7 @@ dependencies {
   api(libs.grpc.api)
   api(libs.grpc.context)
   api(libs.grpc.netty)
+  api(libs.grpc.inprocess)
   api(libs.slf4j2.api)
   api(libs.log4j.slf4j2.impl)
   api(libs.javax.annotation)
