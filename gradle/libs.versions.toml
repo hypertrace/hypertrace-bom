@@ -27,6 +27,7 @@ grpc-protobuf = { module = "io.grpc:grpc-protobuf" }
 grpc-api = { module = "io.grpc:grpc-api" }
 grpc-netty = { module = "io.grpc:grpc-netty" }
 grpc-context = { module = "io.grpc:grpc-context" }
+grpc-inprocess = { module = "io.grpc:grpc-inprocess" }
 jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version = "2.16.0" }
 jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind" }
 jackson-datatype-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" }
