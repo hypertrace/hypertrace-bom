@@ -11,7 +11,7 @@ hypertrace-entityservice = "0.8.86"
 hypertrace-configservice = "0.1.56"
 
 junit = "5.10.0"
-mockito = "5.5.0"
+mockito = "5.8.0"
 
 [libraries]
 guava = { module = "com.google.guava:guava", version = "32.1.2-jre" }
@@ -19,7 +19,7 @@ rholder-guava-retrying = { module = "com.github.rholder:guava-retrying", version
 guice = { module = "com.google.inject:guice", version = "6.0.0" }
 google-re2j = { module = "com.google.re2j:re2j", version = "1.7" }
 typesafe-config = { module = "com.typesafe:config", version = "1.4.2" }
-lombok = { module = "org.projectlombok:lombok", version = "1.18.28" }
+lombok = { module = "org.projectlombok:lombok", version = "1.18.30" }
 grpc-bom = { module = "io.grpc:grpc-bom", version.ref = "grpc" }
 grpc-core = { module = "io.grpc:grpc-core" }
 grpc-stub = { module = "io.grpc:grpc-stub" }
