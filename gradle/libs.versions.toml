@@ -8,7 +8,7 @@ hypertrace-bom = "+"
 hypertrace-attributeservice = "0.14.35"
 hypertrace-gatewayservice = "0.3.9"
 hypertrace-entityservice = "0.8.86"
-hypertrace-configservice = "0.1.56"
+hypertrace-configservice = "0.1.59"
 
 junit = "5.10.0"
 mockito = "5.8.0"
