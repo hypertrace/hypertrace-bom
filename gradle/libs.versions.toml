@@ -3,7 +3,7 @@ protoc = "3.24.1"
 grpc = "1.60.0"
 hypertrace-framework = "0.1.64"
 hypertrace-grpcutils = "0.13.1"
-hypertrace-kafka = "0.4.5"
+hypertrace-kafka = "0.4.8"
 hypertrace-bom = "+"
 hypertrace-attributeservice = "0.14.35"
 hypertrace-gatewayservice = "0.3.9"
@@ -55,7 +55,7 @@ hypertrace-framework-spi = { module = "org.hypertrace.core.serviceframework:serv
 hypertrace-framework-metrics = { module = "org.hypertrace.core.serviceframework:platform-metrics", version.ref = "hypertrace-framework" }
 hypertrace-integrationtest-framework = { module = "org.hypertrace.core.serviceframework:integrationtest-service-framework", version.ref = "hypertrace-framework" }
 hypertrace-framework-documentstore-metrics = { module = "org.hypertrace.core.serviceframework:docstore-metrics", version.ref = "hypertrace-framework" }
-hypertrace-documentstore = { module = "org.hypertrace.core.documentstore:document-store", version = "0.7.55" }
+hypertrace-documentstore = { module = "org.hypertrace.core.documentstore:document-store", version = "0.7.58" }
 hypertrace-eventstore = { module = "org.hypertrace.core.eventstore:event-store", version = "0.1.3" }
 hypertrace-kafka-bom = { module = "org.hypertrace.core.kafkastreams.framework:kafka-bom", version.ref = "hypertrace-kafka" }
 hypertrace-kafka-framework = { module = "org.hypertrace.core.kafkastreams.framework:kafka-streams-framework", version.ref = "hypertrace-kafka" }
