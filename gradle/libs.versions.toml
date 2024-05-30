@@ -2,7 +2,7 @@
 protoc = "3.24.1"
 grpc = "1.60.0"
 hypertrace-framework = "0.1.72"
-hypertrace-grpcutils = "0.13.1"
+hypertrace-grpcutils = "0.13.3"
 hypertrace-kafka = "0.4.7"
 hypertrace-bom = "+"
 hypertrace-attributeservice = "0.14.35"
