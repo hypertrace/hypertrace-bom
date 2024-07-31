@@ -40,7 +40,7 @@ javax-annotation = { module = "javax.annotation:javax.annotation-api", version =
 rxjava3 = { module = "io.reactivex.rxjava3:rxjava", version = "3.1.7" }
 uuidcreator = { module = "com.github.f4b6a3:uuid-creator", version = "5.3.2" }
 commons-text = { module = "org.apache.commons:commons-text", version = "1.10.0" }
-graphql-java = { module = "com.graphql-java:graphql-java", version = "19.6" }
+graphql-java = { module = "com.graphql-java:graphql-java", version = "19.11" }
 jsr305 = { module = "com.google.code.findbugs:jsr305", version = "3.0.2" }
 
 kafka-clients = { module = "org.apache.kafka:kafka-clients" }
