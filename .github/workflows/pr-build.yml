@@ -20,7 +20,7 @@ jobs:
       - name: Build with Gradle
         uses: hypertrace/github-actions/gradle@main
         with:
-          args: assemble
+          args: build
 
   dependency-check:
     runs-on: ubuntu-22.04
