@@ -53,3 +53,15 @@ dependencies {
   api(libs.graphql.java)
   api(libs.jsr305)
 }
+
+tasks.register("verifyResolution") {
+  doLast {
+    configurations.runtimeClasspath {
+      resolve()
+    }
+  }
+}
+
+tasks.check {
+  dependsOn("verifyResolution")
+}
