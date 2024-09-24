@@ -1,8 +1,8 @@
 [versions]
 protoc = "3.25.5"
 grpc = "1.60.0"
-hypertrace-framework = "0.1.76"
-hypertrace-grpcutils = "0.13.4"
+hypertrace-framework = "0.1.79"
+hypertrace-grpcutils = "0.13.6"
 hypertrace-kafka = "0.4.7"
 hypertrace-bom = "+"
 hypertrace-attributeservice = "0.14.35"
