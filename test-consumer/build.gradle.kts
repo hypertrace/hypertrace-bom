@@ -28,7 +28,7 @@ dependencies {
   api(libs.guava)
   api(libs.rholder.guava.retrying)
   api(libs.google.re2j)
-  api(libs.guice)
+  api(libs.guice7)
   api(libs.typesafe.config)
   api(libs.lombok)
   api(libs.protobuf.java)
