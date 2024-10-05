@@ -17,6 +17,7 @@ mockito = "5.8.0"
 guava = { module = "com.google.guava:guava", version = "32.1.2-jre" }
 rholder-guava-retrying = { module = "com.github.rholder:guava-retrying", version = "2.0.0" }
 guice = { module = "com.google.inject:guice", version = "6.0.0" }
+guice7 = { module = "com.google.inject:guice", version = "7.0.0" }
 google-re2j = { module = "com.google.re2j:re2j", version = "1.7" }
 typesafe-config = { module = "com.typesafe:config", version = "1.4.2" }
 lombok = { module = "org.projectlombok:lombok", version = "1.18.30" }
