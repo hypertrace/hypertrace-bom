@@ -52,6 +52,11 @@ dependencies {
   api(libs.commons.text)
   api(libs.graphql.java)
   api(libs.jsr305)
+  api(libs.hypertrace.framework.grpc.jakarta)
+  api(libs.hypertrace.framework.http.jakarta)
+  api(libs.hypertrace.framework.spi.jakarta)
+  api(libs.hypertrace.integrationtest.framework.jakarta)
+  api(libs.hypertrace.framework.documentstore.metrics.jakarta)
 }
 
 tasks.register("verifyResolution") {
