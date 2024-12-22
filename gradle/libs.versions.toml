@@ -2,6 +2,8 @@
 protoc = "3.25.5"
 grpc = "1.68.1"
 hypertrace-framework = "0.1.82"
+#upgrade jakarta flavour from now on
+hypertrace-framework-jakarta = "0.1.83"
 hypertrace-grpcutils = "0.13.7"
 hypertrace-kafka = "0.5.3"
 hypertrace-bom = "+"
@@ -50,12 +52,25 @@ hypertrace-grpcutils-context = { module = "org.hypertrace.core.grpcutils:grpc-co
 hypertrace-grpcutils-client = { module = "org.hypertrace.core.grpcutils:grpc-client-utils", version.ref = "hypertrace-grpcutils" }
 hypertrace-grpcutils-rx-client = { module = "org.hypertrace.core.grpcutils:grpc-client-rx-utils", version.ref = "hypertrace-grpcutils" }
 hypertrace-grpcutils-rx-server = { module = "org.hypertrace.core.grpcutils:grpc-server-rx-utils", version.ref = "hypertrace-grpcutils" }
+
+# jakarta variant for hypertrace service framework
+hypertrace-framework-grpc-jakarta = { module = "org.hypertrace.core.serviceframework:platform-grpc-service-framework", version.ref = "hypertrace-framework-jakarta" }
+hypertrace-framework-http-jakarta = { module = "org.hypertrace.core.serviceframework:platform-http-service-framework", version.ref = "hypertrace-framework-jakarta" }
+hypertrace-framework-service-jakarta = { module = "org.hypertrace.core.serviceframework:platform-service-framework", version.ref = "hypertrace-framework-jakarta" }
+hypertrace-framework-spi-jakarta = { module = "org.hypertrace.core.serviceframework:service-framework-spi", version.ref = "hypertrace-framework-jakarta" }
+hypertrace-framework-metrics-jakarta = { module = "org.hypertrace.core.serviceframework:platform-metrics", version.ref = "hypertrace-framework-jakarta" }
+hypertrace-integrationtest-framework-jakarta = { module = "org.hypertrace.core.serviceframework:integrationtest-service-framework", version.ref = "hypertrace-framework-jakarta" }
+hypertrace-framework-documentstore-metrics-jakarta = { module = "org.hypertrace.core.serviceframework:docstore-metrics", version.ref = "hypertrace-framework-jakarta" }
+
+# deprecating below, use jakarta flavour
 hypertrace-framework-grpc = { module = "org.hypertrace.core.serviceframework:platform-grpc-service-framework", version.ref = "hypertrace-framework" }
 hypertrace-framework-http = { module = "org.hypertrace.core.serviceframework:platform-http-service-framework", version.ref = "hypertrace-framework" }
+hypertrace-framework-service = { module = "org.hypertrace.core.serviceframework:platform-service-framework", version.ref = "hypertrace-framework" }
 hypertrace-framework-spi = { module = "org.hypertrace.core.serviceframework:service-framework-spi", version.ref = "hypertrace-framework" }
 hypertrace-framework-metrics = { module = "org.hypertrace.core.serviceframework:platform-metrics", version.ref = "hypertrace-framework" }
 hypertrace-integrationtest-framework = { module = "org.hypertrace.core.serviceframework:integrationtest-service-framework", version.ref = "hypertrace-framework" }
 hypertrace-framework-documentstore-metrics = { module = "org.hypertrace.core.serviceframework:docstore-metrics", version.ref = "hypertrace-framework" }
+
 hypertrace-documentstore = { module = "org.hypertrace.core.documentstore:document-store", version = "0.8.5" }
 hypertrace-eventstore = { module = "org.hypertrace.core.eventstore:event-store", version = "0.1.4" }
 hypertrace-kafka-bom = { module = "org.hypertrace.core.kafkastreams.framework:kafka-bom", version.ref = "hypertrace-kafka" }
