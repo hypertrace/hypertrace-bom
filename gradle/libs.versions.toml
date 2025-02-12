@@ -1,16 +1,16 @@
 [versions]
 protoc = "3.25.5"
-grpc = "1.68.1"
-hypertrace-framework = "0.1.82"
-#upgrade jakarta flavour from now on
-hypertrace-framework-jakarta = "0.1.83"
-hypertrace-grpcutils = "0.13.7"
+grpc = "1.68.3"
+hypertrace-framework = "0.1.85"
+hypertrace-grpcutils = "0.13.10"
 hypertrace-kafka = "0.5.4"
 hypertrace-bom = "+"
 hypertrace-attributeservice = "0.14.35"
 hypertrace-gatewayservice = "0.3.9"
 hypertrace-entityservice = "0.8.86"
 hypertrace-configservice = "0.1.69"
+jetty = "11.0.24"
+netty = "4.1.118.Final"
 
 junit = "5.10.0"
 mockito = "5.8.0"
@@ -35,6 +35,8 @@ jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version = "2.16.1"
 jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind" }
 jackson-datatype-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" }
 jackson-datatype-jdk8 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jdk8" }
+jetty-bom = { module = "org.eclipse.jetty:jetty-bom", version.ref = "jetty" }
+netty-bom = { module = "io.netty:netty-bom", version.ref = "netty" }
 protobuf-java = { module = "com.google.protobuf:protobuf-java", version.ref = "protoc" }
 protobuf-javautil = { module = "com.google.protobuf:protobuf-java-util", version.ref = "protoc" }
 slf4j2-api = { module = "org.slf4j:slf4j-api", version = "2.0.7" }
@@ -54,13 +56,13 @@ hypertrace-grpcutils-rx-client = { module = "org.hypertrace.core.grpcutils:grpc-
 hypertrace-grpcutils-rx-server = { module = "org.hypertrace.core.grpcutils:grpc-server-rx-utils", version.ref = "hypertrace-grpcutils" }
 
 # jakarta variant for hypertrace service framework
-hypertrace-framework-grpc-jakarta = { module = "org.hypertrace.core.serviceframework:platform-grpc-service-framework", version.ref = "hypertrace-framework-jakarta" }
-hypertrace-framework-http-jakarta = { module = "org.hypertrace.core.serviceframework:platform-http-service-framework", version.ref = "hypertrace-framework-jakarta" }
-hypertrace-framework-service-jakarta = { module = "org.hypertrace.core.serviceframework:platform-service-framework", version.ref = "hypertrace-framework-jakarta" }
-hypertrace-framework-spi-jakarta = { module = "org.hypertrace.core.serviceframework:service-framework-spi", version.ref = "hypertrace-framework-jakarta" }
-hypertrace-framework-metrics-jakarta = { module = "org.hypertrace.core.serviceframework:platform-metrics", version.ref = "hypertrace-framework-jakarta" }
-hypertrace-integrationtest-framework-jakarta = { module = "org.hypertrace.core.serviceframework:integrationtest-service-framework", version.ref = "hypertrace-framework-jakarta" }
-hypertrace-framework-documentstore-metrics-jakarta = { module = "org.hypertrace.core.serviceframework:docstore-metrics", version.ref = "hypertrace-framework-jakarta" }
+hypertrace-framework-grpc-jakarta = { module = "org.hypertrace.core.serviceframework:platform-grpc-service-framework", version.ref = "hypertrace-framework" }
+hypertrace-framework-http-jakarta = { module = "org.hypertrace.core.serviceframework:platform-http-service-framework", version.ref = "hypertrace-framework" }
+hypertrace-framework-service-jakarta = { module = "org.hypertrace.core.serviceframework:platform-service-framework", version.ref = "hypertrace-framework" }
+hypertrace-framework-spi-jakarta = { module = "org.hypertrace.core.serviceframework:service-framework-spi", version.ref = "hypertrace-framework" }
+hypertrace-framework-metrics-jakarta = { module = "org.hypertrace.core.serviceframework:platform-metrics", version.ref = "hypertrace-framework" }
+hypertrace-integrationtest-framework-jakarta = { module = "org.hypertrace.core.serviceframework:integrationtest-service-framework", version.ref = "hypertrace-framework" }
+hypertrace-framework-documentstore-metrics-jakarta = { module = "org.hypertrace.core.serviceframework:docstore-metrics", version.ref = "hypertrace-framework" }
 
 # deprecating below, use jakarta flavour
 hypertrace-framework-grpc = { module = "org.hypertrace.core.serviceframework:platform-grpc-service-framework", version.ref = "hypertrace-framework" }
