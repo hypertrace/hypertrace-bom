@@ -100,7 +100,7 @@ hypertrace-integrationtest = { id = "org.hypertrace.integration-test-plugin", ve
 hypertrace-codestyle = { id = "org.hypertrace.code-style-plugin", version = "2.0.0" }
 hypertrace-docker-publish = { id = "org.hypertrace.docker-publish-plugin", version = "0.9.9" }
 hypertrace-docker-application = { id = "org.hypertrace.docker-java-application-plugin", version = "0.9.9" }
-owasp-dependencycheck = { id = "org.owasp.dependencycheck", version = "11.1.0" }
+owasp-dependencycheck = { id = "org.owasp.dependencycheck", version = "12.1.0" }
 google-protobuf = { id = "com.google.protobuf", version = "0.9.4" }
 
 [bundles]
