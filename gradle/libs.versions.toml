@@ -92,14 +92,14 @@ mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
 mockito-junit = { module = "org.mockito:mockito-junit-jupiter", version.ref = "mockito" }
 
 [plugins]
-hypertrace-repository = { id = "org.hypertrace.repository-plugin", version = "0.4.2" }
-hypertrace-ciutils = { id = "org.hypertrace.ci-utils-plugin", version = "0.3.2" }
-hypertrace-publish = { id = "org.hypertrace.publish-plugin", version = "1.0.5" }
-hypertrace-jacoco = { id = "org.hypertrace.jacoco-report-plugin", version = "0.2.1" }
-hypertrace-integrationtest = { id = "org.hypertrace.integration-test-plugin", version = "0.2.0" }
-hypertrace-codestyle = { id = "org.hypertrace.code-style-plugin", version = "2.0.0" }
-hypertrace-docker-publish = { id = "org.hypertrace.docker-publish-plugin", version = "0.9.9" }
-hypertrace-docker-application = { id = "org.hypertrace.docker-java-application-plugin", version = "0.9.9" }
+hypertrace-repository = { id = "org.hypertrace.repository-plugin", version = "0.5.0" }
+hypertrace-ciutils = { id = "org.hypertrace.ci-utils-plugin", version = "0.4.0" }
+hypertrace-publish = { id = "org.hypertrace.publish-plugin", version = "1.1.1" }
+hypertrace-jacoco = { id = "org.hypertrace.jacoco-report-plugin", version = "0.3.0" }
+hypertrace-integrationtest = { id = "org.hypertrace.integration-test-plugin", version = "0.3.0" }
+hypertrace-codestyle = { id = "org.hypertrace.code-style-plugin", version = "2.1.0" }
+hypertrace-docker-publish = { id = "org.hypertrace.docker-publish-plugin", version = "0.11.0" }
+hypertrace-docker-application = { id = "org.hypertrace.docker-java-application-plugin", version = "0.11.0" }
 owasp-dependencycheck = { id = "org.owasp.dependencycheck", version = "12.1.0" }
 google-protobuf = { id = "com.google.protobuf", version = "0.9.4" }
 
