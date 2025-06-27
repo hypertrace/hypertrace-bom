@@ -1,9 +1,9 @@
 [versions]
 protoc = "3.25.5"
 grpc = "1.68.3"
-hypertrace-framework = "0.1.86"
-hypertrace-grpcutils = "0.13.10"
-hypertrace-kafka = "0.5.4"
+hypertrace-framework = "0.1.89"
+hypertrace-grpcutils = "0.13.14"
+hypertrace-kafka = "0.6.0"
 hypertrace-bom = "+"
 hypertrace-attributeservice = "0.14.35"
 hypertrace-gatewayservice = "0.3.9"
@@ -74,7 +74,7 @@ hypertrace-integrationtest-framework = { module = "org.hypertrace.core.servicefr
 hypertrace-framework-documentstore-metrics = { module = "org.hypertrace.core.serviceframework:docstore-metrics", version.ref = "hypertrace-framework" }
 
 hypertrace-documentstore = { module = "org.hypertrace.core.documentstore:document-store", version = "0.8.6" }
-hypertrace-eventstore = { module = "org.hypertrace.core.eventstore:event-store", version = "0.1.4" }
+hypertrace-eventstore = { module = "org.hypertrace.core.eventstore:event-store", version = "0.1.5" }
 hypertrace-kafka-bom = { module = "org.hypertrace.core.kafkastreams.framework:kafka-bom", version.ref = "hypertrace-kafka" }
 hypertrace-kafka-framework = { module = "org.hypertrace.core.kafkastreams.framework:kafka-streams-framework", version.ref = "hypertrace-kafka" }
 hypertrace-attributeservice-api = { module = "org.hypertrace.core.attribute.service:attribute-service-api", version.ref = "hypertrace-attributeservice" }
@@ -97,7 +97,7 @@ hypertrace-ciutils = { id = "org.hypertrace.ci-utils-plugin", version = "0.4.0" 
 hypertrace-publish = { id = "org.hypertrace.publish-plugin", version = "1.1.1" }
 hypertrace-jacoco = { id = "org.hypertrace.jacoco-report-plugin", version = "0.3.0" }
 hypertrace-integrationtest = { id = "org.hypertrace.integration-test-plugin", version = "0.3.0" }
-hypertrace-codestyle = { id = "org.hypertrace.code-style-plugin", version = "2.1.0" }
+hypertrace-codestyle = { id = "org.hypertrace.code-style-plugin", version = "2.1.2" }
 hypertrace-docker-publish = { id = "org.hypertrace.docker-publish-plugin", version = "0.11.0" }
 hypertrace-docker-application = { id = "org.hypertrace.docker-java-application-plugin", version = "0.11.0" }
 owasp-dependencycheck = { id = "org.owasp.dependencycheck", version = "12.1.0" }
