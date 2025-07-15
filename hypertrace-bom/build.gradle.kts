@@ -48,6 +48,7 @@ dependencies {
     api(libs.kafka.clients)
     api(libs.slf4j2.api)
     api(libs.log4j.slf4j2.impl)
+    api(libs.commons.lang)
     api(libs.commons.text)
     api(libs.graphql.java)
     api(libs.jsr305)

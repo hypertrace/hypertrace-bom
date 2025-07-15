@@ -45,6 +45,7 @@ javax-annotation = { module = "javax.annotation:javax.annotation-api", version =
 rxjava3 = { module = "io.reactivex.rxjava3:rxjava", version = "3.1.7" }
 uuidcreator = { module = "com.github.f4b6a3:uuid-creator", version = "5.3.2" }
 commons-text = { module = "org.apache.commons:commons-text", version = "1.10.0" }
+commons-lang = { module = "org.apache.commons:commons-lang3", version = "3.18.0" }
 graphql-java = { module = "com.graphql-java:graphql-java", version = "19.11" }
 jsr305 = { module = "com.google.code.findbugs:jsr305", version = "3.0.2" }
 
@@ -97,9 +98,9 @@ hypertrace-ciutils = { id = "org.hypertrace.ci-utils-plugin", version = "0.4.0" 
 hypertrace-publish = { id = "org.hypertrace.publish-plugin", version = "1.1.1" }
 hypertrace-jacoco = { id = "org.hypertrace.jacoco-report-plugin", version = "0.3.0" }
 hypertrace-integrationtest = { id = "org.hypertrace.integration-test-plugin", version = "0.3.0" }
-hypertrace-codestyle = { id = "org.hypertrace.code-style-plugin", version = "2.1.2" }
-hypertrace-docker-publish = { id = "org.hypertrace.docker-publish-plugin", version = "0.11.0" }
-hypertrace-docker-application = { id = "org.hypertrace.docker-java-application-plugin", version = "0.11.0" }
+hypertrace-codestyle = { id = "org.hypertrace.code-style-plugin", version = "2.2.0" }
+hypertrace-docker-publish = { id = "org.hypertrace.docker-publish-plugin", version = "0.11.3" }
+hypertrace-docker-application = { id = "org.hypertrace.docker-java-application-plugin", version = "0.11.3" }
 owasp-dependencycheck = { id = "org.owasp.dependencycheck", version = "12.1.0" }
 google-protobuf = { id = "com.google.protobuf", version = "0.9.4" }
 

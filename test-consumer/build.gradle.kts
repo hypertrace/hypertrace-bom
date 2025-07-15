@@ -49,6 +49,7 @@ dependencies {
   api(libs.rxjava3)
   api(libs.uuidcreator)
   api(libs.kafka.clients)
+  api(libs.commons.lang)
   api(libs.commons.text)
   api(libs.graphql.java)
   api(libs.jsr305)
