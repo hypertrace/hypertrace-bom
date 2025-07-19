@@ -36,6 +36,7 @@ dependencies {
     api(libs.hypertrace.configservice.spanprocessing.api)
 
     api(libs.guava)
+    api(libs.gson)
     api(libs.google.re2j)
     api(libs.guice)
     api(libs.rholder.guava.retrying)
