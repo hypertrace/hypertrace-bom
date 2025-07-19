@@ -27,6 +27,7 @@ dependencies {
 
   api(libs.guava)
   api(libs.rholder.guava.retrying)
+  api(libs.gson)
   api(libs.google.re2j)
   api(libs.guice7)
   api(libs.typesafe.config)
