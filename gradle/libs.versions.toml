@@ -16,11 +16,14 @@ junit = "5.10.0"
 mockito = "5.8.0"
 
 [libraries]
+apache-httpcomponents-httpclient = { module = "org.apache.httpcomponents:httpclient", version = "4.5.13" }
+awaitility = { module = "org.awaitility:awaitility", version = "4.0.3" }
 guava = { module = "com.google.guava:guava", version = "32.1.2-jre" }
 rholder-guava-retrying = { module = "com.github.rholder:guava-retrying", version = "2.0.0" }
 gson = { module = "com.google.code.gson:gson", version = "2.13.1" }
 guice = { module = "com.google.inject:guice", version = "6.0.0" }
 guice7 = { module = "com.google.inject:guice", version = "7.0.0" }
+guice-servlet = { module = "com.google.inject.extensions:guice-servlet", version = "7.0.0" }
 google-re2j = { module = "com.google.re2j:re2j", version = "1.7" }
 typesafe-config = { module = "com.typesafe:config", version = "1.4.2" }
 lombok = { module = "org.projectlombok:lombok", version = "1.18.30" }
@@ -32,11 +35,17 @@ grpc-api = { module = "io.grpc:grpc-api" }
 grpc-netty = { module = "io.grpc:grpc-netty" }
 grpc-context = { module = "io.grpc:grpc-context" }
 grpc-inprocess = { module = "io.grpc:grpc-inprocess" }
+grpc-services = { module = "io.grpc:grpc-services" }
 jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version = "2.16.1" }
 jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind" }
 jackson-datatype-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" }
 jackson-datatype-jdk8 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jdk8" }
+jakarta-inject-api = { module = "jakarta.inject:jakarta.inject-api", version = "2.0.1" }
+jakarta-servlet-api = { module = "jakarta.servlet:jakarta.servlet-api", version = "6.0.0" }
 jetty-bom = { module = "org.eclipse.jetty:jetty-bom", version.ref = "jetty" }
+jetty-servlet = { module = "org.eclipse.jetty:jetty-servlet" }
+jetty-server = { module = "org.eclipse.jetty:jetty-server" }
+jetty-servlets = { module = "org.eclipse.jetty:jetty-servlets" }
 netty-bom = { module = "io.netty:netty-bom", version.ref = "netty" }
 protobuf-java = { module = "com.google.protobuf:protobuf-java", version.ref = "protoc" }
 protobuf-javautil = { module = "com.google.protobuf:protobuf-java-util", version.ref = "protoc" }
@@ -54,6 +63,7 @@ kafka-clients = { module = "org.apache.kafka:kafka-clients" }
 
 hypertrace-grpcutils-context = { module = "org.hypertrace.core.grpcutils:grpc-context-utils", version.ref = "hypertrace-grpcutils" }
 hypertrace-grpcutils-client = { module = "org.hypertrace.core.grpcutils:grpc-client-utils", version.ref = "hypertrace-grpcutils" }
+hypertrace-grpcutils-server = { module = "org.hypertrace.core.grpcutils:grpc-server-utils", version.ref = "hypertrace-grpcutils" }
 hypertrace-grpcutils-rx-client = { module = "org.hypertrace.core.grpcutils:grpc-client-rx-utils", version.ref = "hypertrace-grpcutils" }
 hypertrace-grpcutils-rx-server = { module = "org.hypertrace.core.grpcutils:grpc-server-rx-utils", version.ref = "hypertrace-grpcutils" }
 
@@ -98,6 +108,7 @@ hypertrace-repository = { id = "org.hypertrace.repository-plugin", version = "0.
 hypertrace-ciutils = { id = "org.hypertrace.ci-utils-plugin", version = "0.4.0" }
 hypertrace-publish = { id = "org.hypertrace.publish-plugin", version = "1.1.1" }
 hypertrace-jacoco = { id = "org.hypertrace.jacoco-report-plugin", version = "0.3.0" }
+hypertrace-java-convention = { id = "org.hypertrace.java-convention", version = "0.4.0" }
 hypertrace-integrationtest = { id = "org.hypertrace.integration-test-plugin", version = "0.3.0" }
 hypertrace-codestyle = { id = "org.hypertrace.code-style-plugin", version = "2.2.0" }
 hypertrace-docker-publish = { id = "org.hypertrace.docker-publish-plugin", version = "0.11.3" }
