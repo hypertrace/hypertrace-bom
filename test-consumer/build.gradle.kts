@@ -6,6 +6,7 @@ dependencies {
   api(platform(projects.hypertraceBom))
   api(libs.hypertrace.grpcutils.context)
   api(libs.hypertrace.grpcutils.client)
+  api(libs.hypertrace.grpcutils.server)
   api(libs.hypertrace.grpcutils.rx.client)
   api(libs.hypertrace.grpcutils.rx.server)
   api(libs.hypertrace.framework.grpc)
@@ -30,6 +31,7 @@ dependencies {
   api(libs.gson)
   api(libs.google.re2j)
   api(libs.guice7)
+  api(libs.guice.servlet)
   api(libs.typesafe.config)
   api(libs.lombok)
   api(libs.protobuf.java)
@@ -44,6 +46,7 @@ dependencies {
   api(libs.grpc.context)
   api(libs.grpc.inprocess)
   api(libs.grpc.netty)
+  api(libs.grpc.services)
   api(libs.slf4j2.api)
   api(libs.log4j.slf4j2.impl)
   api(libs.javax.annotation)
@@ -59,6 +62,13 @@ dependencies {
   api(libs.hypertrace.framework.spi.jakarta)
   api(libs.hypertrace.integrationtest.framework.jakarta)
   api(libs.hypertrace.framework.documentstore.metrics.jakarta)
+  api(libs.apache.httpcomponents.httpclient)
+  api(libs.awaitility)
+  api(libs.jakarta.inject.api)
+  api(libs.jakarta.servlet.api)
+  api(libs.jetty.server)
+  api(libs.jetty.servlet)
+  api(libs.jetty.servlets)
 }
 
 tasks.register("verifyResolution") {

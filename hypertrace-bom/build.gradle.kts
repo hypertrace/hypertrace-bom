@@ -16,6 +16,7 @@ dependencies {
   constraints {
     api(libs.hypertrace.grpcutils.context)
     api(libs.hypertrace.grpcutils.client)
+    api(libs.hypertrace.grpcutils.server)
     api(libs.hypertrace.grpcutils.rx.client)
     api(libs.hypertrace.grpcutils.rx.server)
     api(libs.hypertrace.framework.grpc)
@@ -53,5 +54,10 @@ dependencies {
     api(libs.commons.text)
     api(libs.graphql.java)
     api(libs.jsr305)
+    api(libs.apache.httpcomponents.httpclient)
+    api(libs.awaitility)
+    api(libs.guice.servlet)
+    api(libs.jakarta.inject.api)
+    api(libs.jakarta.servlet.api)
   }
 }

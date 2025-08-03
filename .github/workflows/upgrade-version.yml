@@ -1,0 +1,71 @@
+name: Upgrade Repository Version
+
+on:
+  repository_dispatch:
+    types: [upgrade-version]
+
+jobs:
+  upgrade-version:
+    runs-on: ubuntu-24.04
+
+    permissions:
+      pull-requests: write
+      contents: write
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Set Variables
+        run: |
+          echo "REPOSITORY=${{ github.event.client_payload.repository }}" >> $GITHUB_ENV
+          echo "VERSION=${{ github.event.client_payload.version }}" >> $GITHUB_ENV
+
+      - name: Upgrade Version in TOML
+        run: |
+          python scripts/upgrade-version.py ${{ env.REPOSITORY }} ${{ env.VERSION }}
+
+      - name: Get Token from Github App
+        uses: tibdex/github-app-token@v2
+        id: generate-token
+        with:
+          app_id: ${{ secrets.GH_CI_APP_ID }}
+          private_key: ${{ secrets.GH_CI_APP_PRIVATE_KEY }}
+          repositories: >-
+            ["hypertrace-bom"]
+
+      - name: Create Pull Request
+        id: create_pr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ steps.generate-token.outputs.token }}
+          base: main
+          title: "chore(${{ env.REPOSITORY }}): Upgrade ${{ env.VERSION }}"
+          commit-message: "chore(${{ env.REPOSITORY }}): Upgrade ${{ env.VERSION }}"
+          body: "Upgrading (${{ env.REPOSITORY }}) to ${{ env.VERSION }}"
+          branch: update-version-${{ env.REPOSITORY }}-${{ env.VERSION }}
+          add-paths: |
+            gradle/libs.versions.toml
+
+      - name: Enable Auto Merge Pull Request
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          token: ${{ steps.generate-token.outputs.token }}
+          pull-request-number: ${{ steps.create_pr.outputs.pull-request-number }}
+          merge-method: squash
+
+      - name: Auto Approve Pull Request
+        uses: hmarr/auto-approve-action@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ steps.create_pr.outputs.pull-request-number }}
