@@ -10,7 +10,7 @@ hypertrace-gatewayservice = "0.3.9"
 hypertrace-entityservice = "0.8.86"
 hypertrace-configservice = "0.1.74"
 jetty = "11.0.24"
-netty = "4.1.124.Final"
+netty = "4.1.125.Final"
 
 junit = "5.10.0"
 mockito = "5.8.0"
