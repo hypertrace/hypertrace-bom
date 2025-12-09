@@ -14,6 +14,7 @@ netty = "4.1.125.Final"
 
 junit = "5.10.0"
 mockito = "5.8.0"
+lz4-java = "1.8.1"
 
 [libraries]
 apache-httpcomponents-httpclient = { module = "org.apache.httpcomponents:httpclient", version = "4.5.13" }
@@ -102,6 +103,7 @@ hypertrace-bom = { module = "org.hypertrace.bom:hypertrace-bom", version.ref = "
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
 mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
 mockito-junit = { module = "org.mockito:mockito-junit-jupiter", version.ref = "mockito" }
+lz4-java = { module = "org.lz4:lz4-java", version.ref = "lz4-java" }
 
 [plugins]
 hypertrace-repository = { id = "org.hypertrace.repository-plugin", version = "0.5.0" }
