@@ -83,7 +83,6 @@ tasks.check {
   dependsOn("verifyResolution")
 }
 
-
 // Handle lz4-java redirect capability conflict:
 // Sonatype added a redirect from org.lz4:lz4-java:1.8.1 -> at.yawk.lz4:lz4-java:1.8.1 to address CVE-2025-12183.
 // Both artifacts declare the same capability, causing a conflict when upgrading from Kafka's org.lz4:lz4-java:1.8.0.
