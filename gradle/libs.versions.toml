@@ -36,7 +36,7 @@ grpc-netty = { module = "io.grpc:grpc-netty" }
 grpc-context = { module = "io.grpc:grpc-context" }
 grpc-inprocess = { module = "io.grpc:grpc-inprocess" }
 grpc-services = { module = "io.grpc:grpc-services" }
-jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version = "2.16.1" }
+jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version = "2.21.1" }
 jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind" }
 jackson-datatype-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" }
 jackson-datatype-jdk8 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jdk8" }
