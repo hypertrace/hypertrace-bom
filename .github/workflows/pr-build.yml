@@ -29,3 +29,4 @@ jobs:
         uses: hypertrace/github-actions/dependency-check@main
         with:
           nvd-api-key: ${{ secrets.NVD_API_KEY }}
+          use-global-suppressions: true
