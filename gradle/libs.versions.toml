@@ -9,7 +9,7 @@ hypertrace-attributeservice = "0.14.35"
 hypertrace-gatewayservice = "0.3.9"
 hypertrace-entityservice = "0.8.86"
 hypertrace-configservice = "0.1.74"
-jetty = "11.0.26"
+jetty = "12.1.8"
 netty = "4.1.132.Final"
 
 junit = "5.10.0"
@@ -41,11 +41,11 @@ jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind" }
 jackson-datatype-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" }
 jackson-datatype-jdk8 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jdk8" }
 jakarta-inject-api = { module = "jakarta.inject:jakarta.inject-api", version = "2.0.1" }
-jakarta-servlet-api = { module = "jakarta.servlet:jakarta.servlet-api", version = "6.0.0" }
+jakarta-servlet-api = { module = "jakarta.servlet:jakarta.servlet-api", version = "6.1.0" }
 jetty-bom = { module = "org.eclipse.jetty:jetty-bom", version.ref = "jetty" }
-jetty-servlet = { module = "org.eclipse.jetty:jetty-servlet" }
+jetty-servlet = { module = "org.eclipse.jetty.ee10:jetty-ee10-servlet" }
 jetty-server = { module = "org.eclipse.jetty:jetty-server" }
-jetty-servlets = { module = "org.eclipse.jetty:jetty-servlets" }
+jetty-servlets = { module = "org.eclipse.jetty.ee10:jetty-ee10-servlets" }
 netty-bom = { module = "io.netty:netty-bom", version.ref = "netty" }
 protobuf-java = { module = "com.google.protobuf:protobuf-java", version.ref = "protoc" }
 protobuf-javautil = { module = "com.google.protobuf:protobuf-java-util", version.ref = "protoc" }
