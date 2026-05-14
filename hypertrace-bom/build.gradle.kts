@@ -12,6 +12,7 @@ dependencies {
   api(platform(libs.jackson.bom))
   api(platform(libs.hypertrace.kafka.bom))
   api(platform(libs.jetty.bom))
+  api(platform(libs.jetty.ee10.bom))
   api(platform(libs.netty.bom))
   constraints {
     api(libs.hypertrace.grpcutils.context)
@@ -59,5 +60,7 @@ dependencies {
     api(libs.guice.servlet)
     api(libs.jakarta.inject.api)
     api(libs.jakarta.servlet.api)
+    api(libs.jetty.servlet)
+    api(libs.jetty.servlets)
   }
 }
