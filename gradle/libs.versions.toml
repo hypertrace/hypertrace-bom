@@ -9,8 +9,8 @@ hypertrace-attributeservice = "0.14.35"
 hypertrace-gatewayservice = "0.3.9"
 hypertrace-entityservice = "0.8.86"
 hypertrace-configservice = "0.1.74"
-jetty = "12.1.9"
-netty = "4.1.133.Final"
+jetty = "12.1.10"
+netty = "4.1.136.Final"
 
 junit = "5.10.0"
 mockito = "5.8.0"
@@ -36,7 +36,7 @@ grpc-netty = { module = "io.grpc:grpc-netty" }
 grpc-context = { module = "io.grpc:grpc-context" }
 grpc-inprocess = { module = "io.grpc:grpc-inprocess" }
 grpc-services = { module = "io.grpc:grpc-services" }
-jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version = "2.21.1" }
+jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version = "2.21.5" }
 jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind" }
 jackson-datatype-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" }
 jackson-datatype-jdk8 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jdk8" }
@@ -51,7 +51,7 @@ netty-bom = { module = "io.netty:netty-bom", version.ref = "netty" }
 protobuf-java = { module = "com.google.protobuf:protobuf-java", version.ref = "protoc" }
 protobuf-javautil = { module = "com.google.protobuf:protobuf-java-util", version.ref = "protoc" }
 slf4j2-api = { module = "org.slf4j:slf4j-api", version = "2.0.7" }
-log4j-slf4j2-impl = { module = "org.apache.logging.log4j:log4j-slf4j2-impl", version = "2.25.4" }
+log4j-slf4j2-impl = { module = "org.apache.logging.log4j:log4j-slf4j2-impl", version = "2.25.5" }
 javax-annotation = { module = "javax.annotation:javax.annotation-api", version = "1.3.2" }
 rxjava3 = { module = "io.reactivex.rxjava3:rxjava", version = "3.1.7" }
 uuidcreator = { module = "com.github.f4b6a3:uuid-creator", version = "5.3.2" }
@@ -86,7 +86,7 @@ hypertrace-framework-metrics = { module = "org.hypertrace.core.serviceframework:
 hypertrace-integrationtest-framework = { module = "org.hypertrace.core.serviceframework:integrationtest-service-framework", version.ref = "hypertrace-framework" }
 hypertrace-framework-documentstore-metrics = { module = "org.hypertrace.core.serviceframework:docstore-metrics", version.ref = "hypertrace-framework" }
 
-hypertrace-documentstore = { module = "org.hypertrace.core.documentstore:document-store", version = "0.9.45" }
+hypertrace-documentstore = { module = "org.hypertrace.core.documentstore:document-store", version = "0.9.50" }
 hypertrace-eventstore = { module = "org.hypertrace.core.eventstore:event-store", version = "0.1.5" }
 hypertrace-kafka-bom = { module = "org.hypertrace.core.kafkastreams.framework:kafka-bom", version.ref = "hypertrace-kafka" }
 hypertrace-kafka-framework = { module = "org.hypertrace.core.kafkastreams.framework:kafka-streams-framework", version.ref = "hypertrace-kafka" }
