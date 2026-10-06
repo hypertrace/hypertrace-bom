@@ -10,7 +10,7 @@ hypertrace-gatewayservice = "0.3.9"
 hypertrace-entityservice = "0.8.86"
 hypertrace-configservice = "0.1.74"
 jetty = "12.1.10"
-netty = "4.1.136.Final"
+netty = "4.1.138.Final"
 
 junit = "5.10.0"
 mockito = "5.8.0"
@@ -36,7 +36,7 @@ grpc-netty = { module = "io.grpc:grpc-netty" }
 grpc-context = { module = "io.grpc:grpc-context" }
 grpc-inprocess = { module = "io.grpc:grpc-inprocess" }
 grpc-services = { module = "io.grpc:grpc-services" }
-jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version = "2.21.5" }
+jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version = "2.21.7" }
 jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind" }
 jackson-datatype-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" }
 jackson-datatype-jdk8 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jdk8" }

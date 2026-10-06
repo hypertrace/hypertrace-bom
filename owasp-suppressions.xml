@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
+  <suppress>
+    <notes><![CDATA[
+   False positive: dependency-check matches cpe:2.3:a:opentelemetry:opentelemetry (affected below 2.8.0, OpenTelemetry's own versioning) to the unrelated Prometheus Java tracer modules. Verified in CI that 1.3.5 and 1.9.0 are both flagged.
+   ]]></notes>
+    <packageUrl regex="true">^pkg:maven/io\.prometheus/prometheus-metrics-tracer-otel(-agent)?@.*$</packageUrl>
+    <cve>CVE-2026-54285</cve>
+  </suppress>
 </suppressions>
