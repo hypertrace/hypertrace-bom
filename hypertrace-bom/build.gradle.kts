@@ -60,7 +60,5 @@ dependencies {
     api(libs.guice.servlet)
     api(libs.jakarta.inject.api)
     api(libs.jakarta.servlet.api)
-    api(libs.prometheus.metrics.tracer.otel)
-    api(libs.prometheus.metrics.tracer.otel.agent)
   }
 }
